@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "wel-cell": "/compoents/wel-cell/wel-cell"
+    }
+}
