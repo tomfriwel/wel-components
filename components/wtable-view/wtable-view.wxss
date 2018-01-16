@@ -1,1 +1,8 @@
 /* components/wtable-view/wtable-view.wxss */
+.wtable-view-container {
+    position: relative;
+    width: 750rpx;
+    padding-top: 40rpx;
+    padding-bottom: 40rpx;
+    background-color: #FAF1F1;
+}

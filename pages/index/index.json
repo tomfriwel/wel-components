@@ -1,5 +1,6 @@
 {
     "usingComponents": {
-        "wcell": "/components/wcell/wcell"
+        "wcell": "/components/wcell/wcell",
+        "wtable-view": "/components/wtable-view/wtable-view"
     }
 }

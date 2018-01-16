@@ -1,4 +1,10 @@
 <!--index.wxml-->
 <view class="container">
-    <wcell />
+
+    <wtable-view>
+        <wcell />
+        <wcell />
+        <wcell />
+        <wcell />
+    </wtable-view>
 </view>

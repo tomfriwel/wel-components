@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+      "wcell": "/components/wcell/wcell"
+  }
 }

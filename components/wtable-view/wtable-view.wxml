@@ -1,2 +1,4 @@
 <!--components/wtable-view/wtable-view.wxml-->
-<text>components/wtable-view/wtable-view.wxml</text>
+<scroll-view class='wtable-view-container' scroll-y>
+     <slot /> 
+</scroll-view>

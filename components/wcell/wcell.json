@@ -1,4 +1,6 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+      "wtable-view": "/components/wtable-view/wtable-view"
+  }
 }

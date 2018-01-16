@@ -1,9 +1,9 @@
 /* components/wel-cell.wxss */
 .wcell-container {
     position: relative;
-    width: 750rpx;
+    width: 100%;
     height: 88rpx;
-    background: white;
+    background-color: white;
 }
 
 .wcell-top-line {
