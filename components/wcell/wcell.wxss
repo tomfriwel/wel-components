@@ -1,12 +1,12 @@
 /* components/wel-cell.wxss */
-.wel-cell-container {
+.wcell-container {
     position: relative;
     width: 750rpx;
     height: 88rpx;
     background: white;
 }
 
-.wel-cell-top-line {
+.wcell-top-line {
     position: absolute;
     left: 0;
     top: 0;
@@ -15,7 +15,7 @@
     background-color: #EAEAEC;
 }
 
-.wel-cell-bottom-line {
+.wcell-bottom-line {
     position: absolute;
     left: 0;
     bottom: 0;
