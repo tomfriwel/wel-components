@@ -1,0 +1,5 @@
+<!--components/wel-cell.wxml-->
+<view class='wel-cell-container'>
+    <view class='wel-cell-top-line'></view>
+    <view class='wel-cell-bottom-line'></view>
+</view>
