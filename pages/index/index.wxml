@@ -1,10 +1,13 @@
 <!--index.wxml-->
 <view class="container">
-
+    <view class='title'>tableview:</view>
     <wtable-view>
         <wcell />
         <wcell />
         <wcell />
         <wcell />
     </wtable-view>
+
+    <view class='title'>searchbar:</view>
+    <searchbar />
 </view>

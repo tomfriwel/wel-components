@@ -1,1 +1,56 @@
 /* components/searchbar/searchbar.wxss */
+.search-bar-container {
+    width: 750rpx; 
+    height: 114rpx;
+    background: #f0eff5;
+    border-bottom: 2rpx solid #F2F3F6;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-content-container {
+    position: relative;
+     width: 100%; 
+    margin: 0 auto;
+    height: 72rpx;
+    border-radius: 14rpx;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar-content-icon {
+    margin-left: 16rpx;
+}
+.search-bar-clear-icon {
+    position: absolute;
+    right: 16rpx;
+}
+.search-bar-content-container input {
+    /* display: flex; */
+    /* display:inline; */
+    margin-left: 10rpx;
+    font-size: 26rpx;
+    color: #53585F;
+    /* width: auto; */
+    /* width: 600rpx; */
+    /* height: 72rpx; */
+    min-width:50rpx;
+    width: auto;
+    /* max-width:100rpx; */
+    line-height: 56rpx;
+    font-weight: 500rpx;
+    background: red;
+}
+
+.search-bar-content-input-placeholder {
+    font-weight: 500;
+    color: #8f8e94;
+    min-width:50rpx;
+    width: auto;
+}
+.placeholder-cover {
+    /* position: absolute; */
+    background: #ddd;
+}

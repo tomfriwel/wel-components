@@ -1,2 +1,9 @@
 <!--components/searchbar/searchbar.wxml-->
-<text>components/searchbar/searchbar.wxml</text>
+<view class='search-bar-container'>
+    <view class='search-bar-content-container'>
+        <icon class='search-bar-content-icon' type='search' size='17'></icon>
+         <input wx:if="{{active}}" placeholder-class='search-bar-content-input-placeholder' placeholder='{{placeholder}}' confirm-type='search' bindconfirm='searchHandler' value='{{searchString}}'></input> 
+        <view wx:if="{{!active}}" class='placeholder-cover' bindtap='activeHandler'>{{placeholder}}</view>
+        <icon wx:if="{{searchString && searchString!=''}}" class='search-bar-clear-icon' type='clear' size='14' bindtap='clearHandler'></icon>
+    </view>
+</view>
