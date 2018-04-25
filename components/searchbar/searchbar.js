@@ -26,10 +26,29 @@ Component({
             })
         },
         searchHandler: function (e) {
-
+            console.log(e)
+        },
+        inputHandler: function (e) {
+            this.setData({
+                value: e.detail.value
+            })
         },
         clearHandler: function (e) {
-
+            this.setData({
+                value:'',
+                active: false
+            })
         },
+        blurHandler:function(e) {
+            console.log(e)
+            let value = e.detail.value
+
+            if(value=='') {
+                this.setData({
+                    value:value,
+                    active:false
+                })
+            }
+        }
     }
 })
