@@ -39,8 +39,12 @@ Component({
                 active: false
             })
         },
+        focusHandler: function (e) {
+            this.setData({
+                active: true
+            })
+        },
         blurHandler:function(e) {
-            console.log(e)
             let value = e.detail.value
 
             if(value=='') {

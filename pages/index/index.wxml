@@ -1,5 +1,6 @@
 <!--index.wxml-->
 <view class="container">
+    <searchbar />
     <view class='title'>tableview:</view>
     <wtable-view>
         <wcell />
@@ -9,5 +10,4 @@
     </wtable-view>
 
     <view class='title'>searchbar:</view>
-    <searchbar />
 </view>

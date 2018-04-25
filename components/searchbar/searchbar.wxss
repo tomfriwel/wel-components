@@ -1,9 +1,7 @@
 /* components/searchbar/searchbar.wxss */
-.search-bar-container {
+ .search-bar-container {
     position: relative;
     width: 750rpx; 
-    /* padding-left: 18rpx;
-    padding-right: 18rpx; */
     background: #f0eff5;
     height: 114rpx;
 }
@@ -27,40 +25,47 @@
     background: #fff;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border: 2rpx solid #e5e5e5;
 }
 
-.search-bar-content-container.active {
+/* .search-bar-content-container.active {
     justify-content: flex-start;
-}
+} */
 
 .search-bar-content-icon {
     margin-left: 16rpx;
 }
 .search-bar-clear-icon {
+    /* position: absolute;
+    height: 100%;
+    right: 16rpx; */
+}
+.clear-wrap {
     position: absolute;
-    right: 16rpx;
+    right: 0;
+    height: 100%;
+    width: 60rpx;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .search-bar-content-container input {
-    margin-left: 10rpx;
+    position: absolute;
+    left: 60rpx;
+    right: 60rpx;
+    /* margin-left: 10rpx; */
     font-size: 32rpx;
     color: #53585F;
+    height: 100%;
     line-height: 56rpx;
-    font-weight: 500rpx;
+    /* font-weight: 500rpx; */
+    /* width: 90%; */
     /* background: red; */
-    width: 86%;
 }
 
-/* .search-bar-content-input-placeholder {
-    font-weight: 500;
-    color: #8f8e94;
-    min-width:50rpx;
-    width: auto;
-} */
 .placeholder-cover {
-    /* position: absolute; */
-    /* background: #ddd; */
     margin-left: 16rpx;
     color: #8f8e94;
     font-size: 32rpx;
@@ -72,19 +77,13 @@
     right: 0;
     width: 100%;
     height: 100%;
+    /* background: #aaa; */
 }
-.cancel {
+/* .cancel {
   float:right;
-}
-
-
-.left {
-  /* width:100px; */
-  height: 200rpx;
-  width: 100%;
-  background-color:#ff0000;
-}
-.right {
-  float:right;
-  background-color:#00FF00;
-}
+  margin-left: 10rpx;
+  width: 100rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #06bf04;
+} */

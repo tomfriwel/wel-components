@@ -1,31 +1,16 @@
 <!--components/searchbar/searchbar.wxml-->
 <view class='search-bar-container'>
     <view class='wrap'>
-            <view class='cancel'>取消</view> 
         <view class="search-bar-content-container {{active?'active':''}}">
             <icon class='search-bar-content-icon' type='search' size='17'></icon>
-            <input wx:if="{{active}}" placeholder-class='search-bar-content-input-placeholder' placeholder='{{placeholder}}' confirm-type='search' focus bindblur='blurHandler' bindinput='inputHandler' bindconfirm='searchHandler' value='{{value}}'></input> 
-            <view wx:if="{{!active}}" class='placeholder-cover' bindtap='activeHandler'>{{placeholder}}</view>
-            <icon wx:if="{{value && value!=''}}" class='search-bar-clear-icon' type='clear' size='17' bindtap='clearHandler'></icon>
-            <view wx:if="{{!active}}" class='cover' bindtap='activeHandler'></view>
+            <input placeholder-class='search-bar-content-input-placeholder' placeholder='{{placeholder}}' confirm-type='search' bindfocus='focusHandler' bindblur='blurHandler' bindinput='inputHandler' bindconfirm='searchHandler' value='{{value}}'></input>
+            <!-- <view wx:if="{{!active}}" class='placeholder-cover' bindtap='activeHandler'>{{placeholder}}</view> -->
+            <view class='clear-wrap' bindtap='clearHandler'>
+                <icon wx:if="{{value && value!=''}}" class='search-bar-clear-icon' type='clear' size='17'></icon>
+            </view>
+            
+            <!-- <view wx:if="{{!active}}" class='cover' bindtap='activeHandler'></view> -->
         </view>
-         
-        <!-- <view class='cancel-wrap'> -->
-        <!-- </view> -->
+        <!-- <view wx:if="{{active}}" class='cancel' bindtap='clearHandler'>取消</view> -->
     </view>
-</view>
-
-<view>
-  <view class="right">
-    right
-  </view>
-  <view class="left">
-    <view class="search-bar-content-container {{active?'active':''}}">
-            <icon class='search-bar-content-icon' type='search' size='17'></icon>
-            <input wx:if="{{active}}" placeholder-class='search-bar-content-input-placeholder' placeholder='{{placeholder}}' confirm-type='search' focus bindblur='blurHandler' bindinput='inputHandler' bindconfirm='searchHandler' value='{{value}}'></input> 
-            <view wx:if="{{!active}}" class='placeholder-cover' bindtap='activeHandler'>{{placeholder}}</view>
-            <icon wx:if="{{value && value!=''}}" class='search-bar-clear-icon' type='clear' size='17' bindtap='clearHandler'></icon>
-            <view wx:if="{{!active}}" class='cover' bindtap='activeHandler'></view>
-        </view>
-  </view>
 </view>
